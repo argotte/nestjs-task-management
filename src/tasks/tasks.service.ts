@@ -12,7 +12,7 @@ export class TasksService {
   }
 
   createTask(createTaskDto: CreateTaskDto): Task {
-    const {title,description}=createTaskDto;
+    const { title, description } = createTaskDto;
     const task: Task = {
       id: uuid(),
       title,
